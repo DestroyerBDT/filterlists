@@ -160,6 +160,7 @@ Add the functionality of [ClearURLs](https://github.com/ClearURLs/Addon#-clearur
 <br> Cleans up some of the clutter on YouTube.
 
 4) [**CutCut**](https://github.com/DestroyerBDT/CutClut) (199 rules) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DestroyerBDT/CutClut/refs/heads/main/CutClut.txt)
+<be> Removes premium content ads, privacy policies, and other unnecessary elements
 
 ### Paywalls
 To most effectively bypass paywalls, use the **Bypass Paywalls Clean** [extension](https://github.com/bpc-clone/bpc_updates/releases). The blocklists are limited in what they can do and are therefore **optional**.
