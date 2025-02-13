@@ -58,7 +58,7 @@ Adblock not working on YouTube?
 # How to add custom filters
 
 > [!NOTE]
-> This repo is tailored to uBlock Origin specifically. I cannot guarantee filters will work in other ad blockers.
+> This repo is tailored specifically to uBlock Origin. I cannot guarantee filters will work in other ad blockers.
 
 ### uBlock Origin
 [Get uBlock Origin](https://ublockorigin.com/) (uBO), if you don't have it already.
@@ -66,8 +66,8 @@ Adblock not working on YouTube?
 To import custom filters into uBlock Origin:
 
 1. Click the **subscribe** link by one of the entries below.
-2. In the new tab that opens, click on **Subscribe** in the top right corner.
-3. Close tab, then repeat for other lists you want to add to uBO.
+2. In the new open tab, click on **Subscribe** in the top right corner.
+3. Close the tab, then repeat for other lists you want to add to uBO.
     
 ### AdGuard
 To import custom filters into AdGuard:
@@ -159,6 +159,8 @@ Add the functionality of [ClearURLs](https://github.com/ClearURLs/Addon#-clearur
 3) [**YouTube Clear View**](https://github.com/yokoffing/filterlists/blob/main/youtube_clear_view.txt) (17 rules) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yokoffing/filterlists/main/youtube_clear_view.txt&title=YouTube%20Clear%20View)
 <br> Cleans up some of the clutter on YouTube.
 
+4) [**CutCut**](https://github.com/DestroyerBDT/CutClut) (199 rules) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DestroyerBDT/CutClut/refs/heads/main/CutClut.txt)
+
 ### Paywalls
 To most effectively bypass paywalls, use the **Bypass Paywalls Clean** [extension](https://github.com/bpc-clone/bpc_updates/releases). The blocklists are limited in what they can do and are therefore **optional**.
 
@@ -195,7 +197,7 @@ I've provided three setup guides: **Enhanced**, **Pro**, and **Optimized**.
 ## Enhanced
 
 #### Features
-Balanced approach for users with a low threshold for site issues:
+A balanced approach for users with a low threshold for site issues:
 * Blocks most URL tracking, cookie pop-ups, and anti-adblock notices
 * (optional) Adds security protections from known badware domains
 
@@ -216,7 +218,7 @@ Balanced approach for users with a low threshold for site issues:
 ## Pro
 
 #### Features
-Advanced apporach for users comfortable troubleshooting issues and reporting site breakage:
+Advanced approach for users comfortable troubleshooting issues and reporting site breakage:
 * Significant privacy protection
 * Block more annoyances
 * (optional) Security protection against abused [TLDs](https://en.wikipedia.org/wiki/Top-level_domain)
@@ -254,10 +256,10 @@ Modern websites often have ads, cookie banners, newsletter pop-ups, social media
 
 Unique to [uBlock Origin](https://github.com/gorhill/uBlock/wiki/Resources-Library) and [AdGuard](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md) are a method of filtering called scriplets. They are small scripts that allow the content blocker to perform customized actions on websites, beyond just blocking elements. Scripts are small code snippets written in JavaScript, which perform certain functions.
 
-This is where a powerful ad blocker like uBO or AdGuard shines, as they can block pop-ups on videos when you click them and other instrusive ads, whereas basic ad blockers only support the bare minimum of network and cosmetic filtering. You'll usually find these in built-in browser ad blockers. (I'm looking you Opera, Vivaldi, and Orion.)
+This is where a powerful ad blocker like uBO or AdGuard shines, as they can block pop-ups on videos when you click them and other intrusive ads, whereas basic ad blockers only support the bare minimum of network and cosmetic filtering. You'll usually find these in built-in browser ad blockers. (I'm looking you Opera, Vivaldi, and Orion.)
 
 ## Disable Cosmetic Filters
-Effective ad blocking now requires cosmetic filters in Ads and Annoyances lists to remove these elements. Most devices, including [mobile devices](https://github.com/gorhill/uBlock/commit/7a768e7b1a), can handle cosmetic filtering without significant performance issues.
+Effective ad blocking now requires cosmetic filters in Ads and annoyance lists to remove these elements. Most devices, including [mobile devices](https://github.com/gorhill/uBlock/commit/7a768e7b1a), can handle cosmetic filtering without significant performance issues.
 
 However, turning off cosmetic filtering when the webpage doesn't need it reduces your device's [workload](https://github.com/gorhill/uBlock/wiki/Doesn't-uBlock-Origin-add-overhead-to-page-load%3F) while still blocking unwanted network requests.
 
@@ -285,7 +287,7 @@ Select **Save** and then **Commit**.
 
 To enable cosmetic filtering when you're on the site, click the uBO icon in your browser toolbar and click the "eye" icon and then the "lock" icon.
 
-It took less than a few browsing sessions to re-enable cosmetic filtering for ad-heavy sites that I visit reguarly. But I was generally impressed with how uBO's network filters and scriplets took care of a lot annoyances using my suggested [Enhanced](https://github.com/yokoffing/filterlists?tab=readme-ov-file#enhanced) setup.
+It took less than a few browsing sessions to re-enable cosmetic filtering for ad-heavy sites that I visit reguarly. But I was generally impressed with how uBO's network filters and scriplets took care of a lot of annoyances using my suggested [Enhanced](https://github.com/yokoffing/filterlists?tab=readme-ov-file#enhanced) setup.
 
 ### Option 2: Selectively disable cosmetic filters
 Another way to go about this is to disable [cosmetic filters](https://github.com/gorhill/uBlock/wiki/Does-uBlock-Origin-block-ads-or-just-hide-them%3F#cosmetic-filters) on only specific sites.
@@ -293,7 +295,7 @@ Another way to go about this is to disable [cosmetic filters](https://github.com
 For a webpage where uBO seems unnecessary, turn off cosmetic filtering for the site. Disabling cosmetic filters on specific sites is more flexible than allowing cosmetic filters everywhere by default. However, it requires you to 1) assess a site and 2) remember to disable them. This method is also less of a net benefit for your device's performance.
 
 #### Instructions
-In general, you'll want to disable cosmetic filtering for small blogs, benchmarking sites, government sites, and any other unobstrusive pages. If you already have a good idea of what those are, you can go to the **Settings** pane in the dashboard and click on the **My rules** tab. Then, under **Temporary rules**, you can enter something like this:
+In general, you'll want to disable cosmetic filtering for small blogs, benchmarking sites, government sites, and any other unobtrusive pages. If you already have a good idea of what those are, you can go to the **Settings** pane in the dashboard and click on the **My rules** tab. Then, under **Temporary rules**, you can enter something like this:
 
 ```
 no-cosmetic-filtering: basicappleguy.com true
@@ -318,7 +320,7 @@ Another way to improve performance is to use alternative filter lists with fewer
 > [!NOTE]
 > AdGuard for [iOS](https://adguard.com/en/adguard-ios/overview.html) automatically uses optimized filters, so you don't need to manually add the iOS-specific links provided below. The guide includes these links mainly for reference, as AdGuard doesn't explicitly label the built-in filters as "optimized" even though they are.
 
-The rule counts below compare each optimized list to its original version in uBO. The numbers are a snapshot of the rule counts at the time of writing.
+The rule counts below to compare each optimized list to its original version in uBO. The numbers are a snapshot of the rule counts at the time of writing.
 
 ### Ads
 
@@ -345,7 +347,7 @@ The rule counts below compare each optimized list to its original version in uBO
 <br> Hides website notifications, social media widgets, cookie notices, chat widgets, and some newsletters, thereby substantially decreasing web page loading times and uncluttering them. Includes `EasyList - Cookie Notices` and `EasyList - Social Widgets`.
 
 2) **[AdGuard Annoyances (Optimized)](https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt)** (44k optimized vs. 61k rules) | [iOS version](https://filters.adtidy.org/ios/filters/14_optimized.txt) (24k rules) | [subscribe](https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt&title=AdGuard%20Annoyances%20(Optimized))
-<br> Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets. (To block social media buttons, use `AdGuard Social Media filter` as well.)
+<br> Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances, and Widgets. (To block social media buttons, use `AdGuard Social Media filter` as well.)
 
 4) **[AdGuard Social Media filter (Optimized)](https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt)** (16k optimized vs. 21k rules) | [iOS version](https://filters.adtidy.org/ios/filters/4_optimized.txt) (7k rules)
  | [subscribe](https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt&title=AdGuard%20Social%20Media%20filter%20(Optimized))
@@ -398,7 +400,7 @@ If you don't want to fiddle with the settings ever again and aren't concerned ab
 
 ### Specific websites
 
-For sites with heavy ad-injection, like YouTube, you will need to open uBOL's popup panel and choose **Complete** to block unwanted content.
+For sites with heavy ad injection, like YouTube, you will need to open uBOL's popup panel and choose **Complete** to block unwanted content.
 
 To change the filtering level for a specific site:
 
@@ -433,7 +435,7 @@ The Minified lists are part of an Adblock Plus-hosted unofficial project that wa
 
 #### uBO-specific
 * [How to test filters](https://www.reddit.com/r/uBlockOrigin/wiki/solutions/#wiki_how_to_test_filters)
-    * gorhill's [note](https://www.reddit.com/r/uBlockOrigin/comments/xwlw7p/ubo_makes_my_ad_block_test_produce_a_worse_score/) on adblock test sites
+    * gorhill's [note](https://www.reddit.com/r/uBlockOrigin/comments/xwlw7p/ubo_makes_my_ad_block_test_produce_a_worse_score/) on AdBlock test sites
 * Toggle on [advanced settings](https://github.com/gorhill/uBlock/wiki/Advanced-user-features)
 * [Dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide) | [video](https://www.youtube.com/watch?v=2lisQQmWQkY)
 * [Medium Mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) | [video](https://www.youtube.com/watch?v=2lisQQmWQkY&t=804s) | [warning](https://reddit.com/r/firefox/comments/y0oce5/comment/irvpvrn/?context=1)
@@ -458,7 +460,7 @@ The Minified lists are part of an Adblock Plus-hosted unofficial project that wa
 
 # Mentions
 
-**User comments:**
+**User Comments:**
 [1](https://reddit.com/r/uBlockOrigin/comments/t5ipte/deleted_by_user/hz5edjk/?context=2)
 [2](https://reddit.com/r/dataisbeautiful/comments/t52qxa/oc_i_updated_our_famous_password_table_for_2022/hz4bcq8/?context=2)
 [3](https://reddit.com/r/firefox/comments/z5auzi/firefox_not_properly_usingrecognizing_gpu_poor/iy0kru3)
